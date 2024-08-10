@@ -1,0 +1,251 @@
+<style>
+    .login-container {
+      border-radius: 54px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 121px 70px;
+    }
+    
+    .login-wrapper {
+      width: 100%;
+      max-width: 1130px;
+    }
+    
+    .login-content {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .login-form-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 36%;
+    }
+    
+    .login-form {
+        position:relative;
+        left:-400px;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      color: #1c1c1c;
+      font: 400 12px Poppins, sans-serif;
+    }
+    
+    .welcome-heading {
+        position: relative;
+        width: 347px;
+        height:74px;
+        font: 700 100px Smooch Sans;        
+    }
+    
+    .welcome-subtext {
+        color: #1C1C1C;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left:100px;
+    }
+    
+    .input-wrapper {
+      border-radius: 13px;
+      background-color: #f2f2f2;
+      display: flex;
+      margin-top: 24px;
+      gap: 6px;
+      white-space: nowrap;
+      padding: 14px 18px;
+    }
+    
+    .input-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 24px;
+    }
+    
+    .input-field {
+      flex-grow: 1;
+      width: 293px;
+      flex-basis: auto;
+      margin: auto 0;
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+    
+    .next-button {
+      border-radius: 13px;
+      background-color: #08875d;
+      margin-top: 24px;
+      color: #fff;
+      font-weight: 700;
+      white-space: nowrap;
+      padding: 17px 70px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .login-alternatives {
+      font-size: 16px;
+      align-self: center;
+      margin-top: 24px;
+    }
+    
+    .social-login-button {
+      border-radius: 13px;
+      display: flex;
+      margin-top: 24px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 70px;
+      border: 1px solid #1c1c1c;
+      background: transparent;
+      cursor: pointer;
+    }
+    
+    .social-login-content {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    
+    .social-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 30px;
+    }
+    
+    .social-text {
+      margin: auto 0;
+    }
+    
+    .image-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 64%;
+      margin-left: 20px;
+    }
+    
+    .login-image {
+      aspect-ratio: 1.27;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      border-radius: 30px;
+    }
+    
+    @media (max-width: 991px) {
+      .login-container {
+        padding: 100px 20px;
+      }
+    
+      .login-wrapper {
+        max-width: 100%;
+      }
+    
+      .login-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    
+      .login-form-column,
+      .image-column {
+        width: 100%;
+        margin-left: 0;
+      }
+    
+      .login-form {
+        margin-top: 40px;
+      }
+    
+      .welcome-heading {
+        font-size: 40px;
+        margin: 0 9px 0 8px;
+      }
+    
+      .input-wrapper,
+      .next-button {
+        white-space: initial;
+      }
+    
+      .next-button {
+        padding: 17px 20px;
+      }
+    
+      .social-login-button {
+        padding: 11px 20px;
+      }
+    
+      .login-image {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    </style>
+    
+    <section class="login-container">
+      <div class="login-wrapper">
+        <div class="login-content">
+          <div class="login-form-column">
+            <form class="login-form">
+              <h1 class="welcome-heading">Welcome</h1>
+              <p class="welcome-subtext" ">We are glad to see you back with us</p>
+              <div class="input-wrapper">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b13132185ffd770fe1f7282c8e8521149de0a63f45d24b7b5310e434cb7cf5b3?placeholderIfAbsent=true&apiKey=dfbd2a8418434336805666adc9da5449" class="input-icon" alt="" />
+                <label for="username" class="visually-hidden">Username</label>
+                <input type="text" id="username" class="input-field" placeholder="Username" />
+              </div>
+              <div class="input-wrapper">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c7acdef7c0d398dd8d90cd5405e00c678a17f9cd283427e12675bb17166b61c?placeholderIfAbsent=true&apiKey=dfbd2a8418434336805666adc9da5449" class="input-icon" alt="" />
+                <label for="password" class="visually-hidden">Password</label>
+                <input type="password" id="password" class="input-field" placeholder="Password" />
+              </div>
+              <button type="submit" class="next-button">NEXT</button>
+              <p class="login-alternatives">
+                <strong>Login</strong> with Others
+              </p>
+              <button type="button" class="social-login-button">
+                <div class="social-login-content">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/568f941fa23e55aee1edfbad7ebfd7943b03b26759b409929b805e70b32ca97a?placeholderIfAbsent=true&apiKey=dfbd2a8418434336805666adc9da5449" class="social-icon" alt="Google logo" />
+                  <span class="social-text">Login with <strong>google</strong></span>
+                </div>
+              </button>
+              <button type="button" class="social-login-button">
+                <div class="social-login-content">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ae9b613e076d6b464823be91d2e69cbae936232191eb590e977813348f2df694?placeholderIfAbsent=true&apiKey=dfbd2a8418434336805666adc9da5449" class="social-icon" alt="Facebook logo" />
+                  <span class="social-text">Login with <strong>Facebook</strong></span>
+                </div>
+              </button>
+            </form>
+          </div>
+          <div class="image-column">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4b8ad98da93a802a348db461104950d1ca921da7dcd769de39df5cb8a6c8b6b0?placeholderIfAbsent=true&apiKey=dfbd2a8418434336805666adc9da5449" class="login-image" alt="Decorative login image" style="margin-top: 320px;margin-left:-300px;"">
+          </div>
+        </div>
+      </div>
+    </section>
