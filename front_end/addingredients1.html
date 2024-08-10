@@ -1,5 +1,85 @@
 <html>
-    <header>
-        This is a test
-    </header>
+<head>
+    <!--Building the external styles to be utilized later in the code-->
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color:white;
+        }
+        .topnav a {
+            float: right;
+            color: green;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .topnav a:hover{
+            color:back;
+            text-decoration: underline;
+        }
+        .home{
+            overflow: hidden;
+            background-color:white;
+            float:left;
+            color: green;
+            text-align: center;
+            padding: 16px;
+            font-size: 20px;
+        }
+        .button{
+            background-color: green;
+            border:none;
+            color:white;
+            padding: 4px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 2px 2px;
+            border-radius: 10pt;
+            float:right;
+            display: flex;
+        }
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+    <!--Naming Convention of the page-->
+    <title>Ingredients Page</title>
+
+    <!--Building a navigation bar-->
+    <body>
+    <div class = "home">
+        <a href="#Tasty">Tasty</a>
+    </div>
+    <div class = "topnav">
+        <!--Buttons built for inventory and basket-->
+       <div class = "button"> 
+        <button class = "button">Inventory</button>
+       </div>
+        <!--# needs to be changed with a link to the website-->
+        <a href="#Newstand">Newstand</a>
+        <a href="#shop">Shop</a>
+        <a href="#About Us">About Us</a>
+    </div>
+
+    <!-- Center of the page to add ingredients-->
+    <div class = "container">
+    <h3> Add your ingredients to start </h3>
+    </div>
+    <p style ="color:grey;">
+        You can create a new product or inport your product inventory.
+    </p>
+    </body> 
+</head>
 </html>
