@@ -44,7 +44,7 @@
             float:right;
             display: flex;
         }
-        .container {
+        .image{
             height: 100%;
             width: 100%;
             display: flex;
@@ -52,7 +52,25 @@
             align-items: center;
             justify-content: center;
         }
-
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            padding: 130px;
+        }
+        .text {
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            padding: 136px;
+        }
     </style>
     <!--Naming Convention of the page-->
     <title>Ingredients Page</title>
@@ -74,12 +92,20 @@
     </div>
 
     <!-- Center of the page to add ingredients-->
-    <div class = "container">
-    <h3> Add your ingredients to start </h3>
+    <div class="image">
+        <img src="https://cdn-icons-png.flaticon.com/512/48/48639.png" width="300" height="300">
     </div>
-    <p style ="color:grey;">
+    <div class = "container">
+        <h3> Add your ingredients to start </h3>
+    </div>
+    <p class = "text" style ="color:grey;">
         You can create a new product or inport your product inventory.
     </p>
+    </div>
+
+    </div>
+    </div>
+    </div>
     </body> 
 </head>
 </html>
